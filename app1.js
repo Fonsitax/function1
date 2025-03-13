@@ -1,5 +1,5 @@
 function calculateTotalPrice(itemCost =[], tax) {
-    const total = itemCost.reduce((sum, price) => sum + price, 0)
+    const total = itemCost.reduce((accumulator, currentValue) => accumulator + currentValue, 0)
     return total + total * tax; 
 }
 
